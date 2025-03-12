@@ -4,35 +4,30 @@ import { ArrowRight, Heart, Shield, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
+import { CoverImage } from "@/components/coverImage"
 
 export default function MatrimonyPage() {
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2 text-[#06ABEB]">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Matrimony Service for People with Disabilities
-              </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                A trusted platform to find your life partner in a safe, respectful, and inclusive environment.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="/contact">
-              <Button className="border-[#06ABEB] text-[#06ABEB] hover:bg-[#06ABEB] hover:text-white transition-colors">
+        <CoverImage
+        src="/matrimony-cover.avif"
+        alt="Thay Trust Matrimony Service"
+        title="Matrimony Service for People with Disabilities"
+        subtitle="A trusted platform to find your life partner in a safe, respectful, and inclusive environment."
+      >
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <Link href="/contact">
+            <Button className="bg-[#06ABEB] hover:bg-[#0590c5]">
               Register Now
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-              <Link href="#how-it-works">
-                <Button variant="outline">How It Works</Button>
-              </Link>
-            </div>
-          </div>
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+          <Link href="#how-it-works">
+          <Button variant="outline" className="text-black hover:text-[#06ABEB]">
+              How It Works</Button>
+          </Link>
         </div>
-      </section>
+      </CoverImage>
       <section id="why-choose" className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -180,7 +175,6 @@ export default function MatrimonyPage() {
           <div className="flex justify-center">
             <Link href="/testimonials">
               <Button className="border-[#06ABEB] text-[#06ABEB] hover:bg-[#06ABEB] hover:text-white transition-colors" variant="outline" size="lg">
-
                 Read More Success Stories
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

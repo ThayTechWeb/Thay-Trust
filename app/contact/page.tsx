@@ -6,31 +6,25 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
+import { CoverImage } from "@/components/coverImage"
 
 export default function ContactPage() {
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+    <CoverImage
+        src="/contactUs.avif"
+        alt="Contact Thay Trust"
+        title="Contact Us"
+        subtitle="We're here to answer your questions and provide support. Reach out to us through any of the channels below."
+      />
+     <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#06ABEB]">Contact Us</h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              We&#39;re here to answer your questions and provide support. Reach out to us through any of the channels
-                below.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-6">
               <div className="space-y-3">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Get in Touch</h2>
                 <p className="text-muted-foreground md:text-xl">
-                Whether you&#39;re interested in our workshop internships, matrimony service, or have general inquiries,
+                  Whether you&#39;re interested in our workshop internships, matrimony service, or have general inquiries,
                   we&#39;re here to help.
                 </p>
               </div>
@@ -70,7 +64,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Send Us a Message</CardTitle>
                 <CardDescription>
-                Fill out the form below and we&#39;ll get back to you as soon as possible.
+                  Fill out the form below and we&#39;ll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>

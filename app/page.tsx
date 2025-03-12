@@ -4,37 +4,31 @@ import { ArrowRight, Briefcase, Heart, Users, Award, Lightbulb } from "lucide-re
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { CoverImage } from "@/components/coverImage"
 
 export default function Home() {
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2 text-[#06ABEB]">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Empowering Lives Through Inclusive Opportunities
-              </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Thay Trust provides trusted workshop internships for people with disabilities and those from
-                disadvantaged backgrounds, along with a dedicated matrimony service.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="/workshop">
-                <Button className="border-[#06ABEB] text-[#06ABEB] hover:bg-[#06ABEB] hover:text-white transition-colors">
-                  Explore Workshops
-                  <ArrowRight className="ml-2 h-4 w-4 " />
-                </Button>
-              </Link>
-              <Link href="/matrimony">
-                <Button variant="outline">Matrimony Service</Button>
-              </Link>
-            </div>
-          </div>
+       <CoverImage
+        src="/internship.avif"
+        alt="Thay Trust - Empowering Lives"
+        title="Empowering Lives Through Inclusive Opportunities"
+        subtitle="Thay Trust provides trusted workshop internships for people with disabilities and those from disadvantaged backgrounds, along with a dedicated matrimony service."
+      >
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <Link href="/workshop">
+            <Button className="bg-[#06ABEB] hover:bg-[#0590c5]">
+              Explore Workshops
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+          <Link href="/matrimony">
+          <Button variant="outline" className="text-black hover:text-[#06ABEB]">
+              Matrimony Service</Button>
+          </Link>
         </div>
-      </section>
-      <section id="services" className="w-full py-12 md:py-24 lg:py-32">
+      </CoverImage>
+      <section id="services" className="w-full py-12 md:py-16 lg:py-18">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
