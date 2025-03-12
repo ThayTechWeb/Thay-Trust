@@ -52,9 +52,11 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-3 md:gap-4">
                   <Phone className="h-5 w-5 md:h-6 md:w-6 text-[#06ABEB] shrink-0 mt-1" />
+                  <div className="grid gap-1">
                   <h3 className="text-lg md:text-xl font-bold">Call Us</h3>
                     <p className="text-sm md:text-base text-muted-foreground">+91 06380454663</p>
                     <p className="text-sm md:text-base text-muted-foreground">Monday - Friday, 9am - 5pm IST</p>
+                  </div>
                   </div>
                 </div>
             </div>
