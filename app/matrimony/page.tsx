@@ -10,7 +10,7 @@ export default function MatrimonyPage() {
   return (
     <>
         <CoverImage
-        src="/matrimony-cover.avif"
+        src="/Matrimony-cover.avif"
         alt="Thay Trust Matrimony Service"
         title="Matrimony Service for People with Disabilities"
         subtitle="A trusted platform to find your life partner in a safe, respectful, and inclusive environment."
