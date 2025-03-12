@@ -3,7 +3,7 @@ import Link from "next/link"
 export function Footer() {
   return (
     <footer className="border-t">
-      <div className="container flex flex-col gap-4 py-10 md:flex-row md:gap-8 md:py-12 max-w-6xl mx-auto">
+      <div className="container flex flex-col gap-4 px-4 md:px-6 py-8 md:py-10 md:flex-row md:gap-8 max-w-6xl mx-auto">
         <div className="flex-1 space-y-4">
           <div className="flex items-center gap-2 font-bold text-xl">
             <span className="text-[#06ABEB]">Thay</span>Trust
@@ -51,4 +51,5 @@ export function Footer() {
     </footer>
   )
 }
+
 

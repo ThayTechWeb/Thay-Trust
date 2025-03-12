@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
        <CoverImage
-        src="/internship.avif"
+        src="/home.jpg"
         alt="Thay Trust - Empowering Lives"
         title="Empowering Lives Through Inclusive Opportunities"
         subtitle="Thay Trust provides trusted workshop internships for people with disabilities and those from disadvantaged backgrounds, along with a dedicated matrimony service."
